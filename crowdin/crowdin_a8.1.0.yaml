@@ -1,8 +1,8 @@
-# crowdin-n7x.yaml
+# crowdin-a8.1.0.yaml
 #
-# Crowdin configuration file for Screw'd 
+# Crowdin configuration file for AquariOS
 #
-# Copyright (C) 2016 Screw'd AOSP
+# Copyright (C) 2018 AquariOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,30 +17,18 @@
 # limitations under the License.
 
 api_key: GETYOUROWNDAMNAPIKEY!!
-base_path: /home/mrapocalypse/ScrewdN
-project_identifier: screwd-aosp
+base_path: /home/calphonic/aquarios
+project_identifier: AquariOS-2017
 preserve_hierarchy: true
 
 files:
-# Default for ScrewdAOSP
+# Default for AquariOS
   -
-    source:      '/**/values/screwd_strings.xml'
+    source:      '/**/values/custom_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
         de: de
-        es-ES: es
-        fr: fr
-        it: it
-        ja: ja
-        ms: ms
-        nl: nl
-        pl: pl
-        ru: ru
-        sv-SE: sv
-        vi: vi
-        zh-TW: zh-rTW
-
 
   -
     source:      '/packages/apps/DUI/res/values/strings.xml'
@@ -48,11 +36,11 @@ files:
     languages_mapping: *anchor
 
   -
-    source:      '/packages/apps/Settings/res/values/screwd_strings.xml'
+    source:      '/packages/apps/Settings/res/values/custom_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   -
-    source:      '/packages/apps/ScrewShop/res/values/strings.xml'
+    source:      '/packages/apps/CoralReef/res/values/strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
